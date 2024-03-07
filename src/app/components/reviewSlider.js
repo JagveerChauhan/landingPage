@@ -89,32 +89,24 @@ const ReviewsCards = ({ review }) => {
 
 const testimonialReviews=[
   {
-    name:"jagveer chauhan",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
+    name:"Amit Kumar",
+    description: "Onetick Technologies creates aesthetically pleasing websites. They are committed to making communication smooth and efficient. However, I find the technical aspects of the back-end more complex than I have experienced so far."
   },
   {
-    name:"Rahul chauhan",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
+    name:"Ajay Singh",
+    description: "It was good experience working with Onetick Technologies for my projects. The team was highly professional, responsive and skilled in what they do. They delivered my projects on time and with in the budget."
   },
   {
-    name:"pawan",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
+    name:"Vijay Malhotra",
+    description: "It has been a pleasure working with Onetick Technologies team. They are extremely efficient and delivers projects on time."
   },
   {
-    name:"niharika",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
+    name:"Rahul Garg",
+    description: "I am here to share my experience with Onetick Technologies on a project regarding my website. It was earlier showing some bugs and 404 errors. But thanks to the developers and team for getting my work done. Very grateful. It was a happy experience."
   },
   {
-    name:"anuj",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
-  },
-  {
-    name:"anshuman",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
-  },
-  {
-    name:"aakash",
-    description: "It’s like having a superpower! I’ve tried almost every alternative and competitor They understand data beyond the vanity metrics haven’t found anything quite  to use as Fluxi."
+    name:"Harshit Sharma",
+    description: "I would like to extend my thanks to Netmaxims technologies for re-defining my site and being so interactive throughout. I received highly active responses."
   },
 ]
 

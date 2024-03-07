@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 import ReviewSlider from "@/app/components/reviewSlider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faFacebook, faInstagram, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {faFacebook, faInstagram, faLinkedin, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import baseUrl from '@/app/constants/constant.js';
 
 export default function Home() {
@@ -328,10 +328,10 @@ export default function Home() {
           <div className="flex flex-col m-auto md:m-0 gap-3 p-5">
             <Image src={'/onetickLogo.png'} height={45} width={150} alt="Onetick logo"></Image>
             <div className="flex flex-row gap-3 ps-2">
-              <Link href={'#'}><FontAwesomeIcon icon={faWhatsapp} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-              <Link href={'#'}><FontAwesomeIcon icon={faFacebook} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-              <Link href={'#'}><FontAwesomeIcon icon={faInstagram} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-              <Link href={'#'}><FontAwesomeIcon icon={faYoutube} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
+              <Link href={'https://api.whatsapp.com/send?phone=+919650076857&text=Hi'}><FontAwesomeIcon icon={faWhatsapp} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
+              <Link href={'https://www.facebook.com/oneticktechnologies'}><FontAwesomeIcon icon={faFacebook} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
+              <Link href={'https://www.instagram.com/oneticktechnologies?igsh=YmNnbHFsZ3F0djk5'}><FontAwesomeIcon icon={faInstagram} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
+              <Link href={'https://www.linkedin.com/company/onetick-technologies-pvt-ltd/'}><FontAwesomeIcon icon={faLinkedin} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
             </div>
           </div>
           <div className="flex flex-col gap-3 font-DM Sans p-5">

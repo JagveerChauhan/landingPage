@@ -109,14 +109,14 @@ export default function Home() {
       <nav className="sticky z-50 top-0 left-0 w-full flex flex-row justify-between drop-shadow-md bg-white px-10">
         <Image src={'/onetickLogo.png'} alt="Logo" height={45} width={150}></Image>
         <span className="py-6">
-          <a className="py-3 px-6 bg-dark-blue text-white rounded-2xl font-semibold font-DM Sans" href="#">Contact Us</a>
+          <a className="py-3 px-6 bg-dark-blue text-white rounded-2xl font-semibold font-DM Sans" href="tel:+919650076857">Call Now</a>
         </span>
       </nav>
       <div className="px-2 py-10 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 bg-dark-blue text-white font-DM Sans">
         <div className="flex flex-col justify-center gap-8 md:gap-10 px-6 sm:px-10 md:px-0 py-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold md:max-w-md">Boost Your Efficiency with Our Web Development.</h1>
           <p className="text-sm font-medium md:max-w-md">Get ahead with our web development services. We&apos;ll build you a website that boosts your business and helps you work smarter.</p>
-          <Link className="py-3 px-5 max-w-fit bg-white rounded-3xl text-dark-blue font-bold" href={'#'}>Try free trial</Link>
+          {/* <Link className="py-3 px-5 max-w-fit bg-white rounded-3xl text-dark-blue font-bold" href={'#'}>Try free trial</Link> */}
         </div>
         <div className="py-6 px-6  w-8/12 md:min-w-1.5 bg-white rounded-xl text-black m-auto ">
           <form className=" flex flex-col gap-2" onSubmit={handleFormSubmit}>
@@ -233,7 +233,7 @@ export default function Home() {
             <p className="text-base font-medium text-neutral-300">Let&apos;s collaborate and create something exceptional together. Elevate your digital presence with our innovative solutions.</p>
           </div> 
           <div className="m-auto min-w-fit">
-            <Link className="px-6 py-4 bg-white text-dark-blue font-bold rounded-3xl" href={'#'}>Contact Us</Link>
+            <Link className="px-6 py-4 bg-white text-dark-blue font-bold rounded-3xl" href={'#contactUs'}>Contact Us</Link>
           </div>
         </div>
       </div>
@@ -274,7 +274,7 @@ export default function Home() {
       <div className="">
         <ReviewSlider/>
       </div>
-      <div className="relative bg-dark-blue p-10 md:p-20 font-DM Sans overflow-hidden">
+      <div className="relative bg-dark-blue p-10 md:p-20 font-DM Sans overflow-hidden " id="contactUs">
         <Image className="absolute z-0 left-0 translate-y-40 -translate-x-44" src={'/images/01.png'} height={400} width={400} alt="image"></Image>
         <Image className="absolute z-0 right-0 translate-x-40" src={'/images/Group3.png'} height={400} width={400} alt="image"></Image>
         <div className="p-2 z-10 grid grid-cols-1 md:grid-cols-2 font-DM Sans bg-white rounded-lg md:max-w-screen-md m-auto">

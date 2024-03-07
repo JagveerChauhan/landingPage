@@ -107,9 +107,9 @@ export default function Home() {
   return (
     <>
       <nav className="sticky z-50 top-0 left-0 w-full flex flex-row justify-between drop-shadow-md bg-white px-10">
-        <Image src={'/onetickLogo.png'} alt="Logo" height={45} width={150}></Image>
+        <Link className="my-auto" href={'/'}><Image src={'/onetickLogo.png'} alt="Logo" height={45} width={150}></Image></Link>
         <span className="py-6">
-          <a className="py-3 px-6 bg-dark-blue text-white rounded-2xl font-semibold font-DM Sans" href="tel:+919650076857">Call Now</a>
+          <Link className="py-3 px-6 bg-dark-blue text-white rounded-2xl font-semibold font-DM Sans" href="tel:+919650076857">Call Now</Link>
         </span>
       </nav>
       <div className="px-2 py-10 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 bg-dark-blue text-white font-DM Sans">

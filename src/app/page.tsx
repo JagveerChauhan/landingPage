@@ -106,7 +106,7 @@ export default function Home() {
 
   return (
     <>
-      <nav className="sticky z-50 top-0 left-0 w-full flex flex-row justify-between drop-shadow-md bg-white px-10">
+      <nav className="sticky z-50 top-0 left-0 w-full flex flex-row justify-between drop-shadow-md bg-white px-5 md:px-10">
         <Link className="my-auto" href={'/'}><Image src={'/onetickLogo.png'} alt="Logo" height={45} width={150}></Image></Link>
         <span className="py-6">
           <Link className="py-3 px-6 bg-dark-blue text-white rounded-2xl font-semibold font-DM Sans" href="tel:+919650076857">Call Now</Link>
@@ -114,8 +114,8 @@ export default function Home() {
       </nav>
       <div className="px-2 py-10 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 bg-dark-blue text-white font-DM Sans">
         <div className="flex flex-col justify-center gap-8 md:gap-10 px-6 sm:px-10 md:px-0 py-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold md:max-w-md">Boost Your Efficiency with Our Web Development.</h1>
-          <p className="text-sm font-medium md:max-w-md">Get ahead with our web development services. We&apos;ll build you a website that boosts your business and helps you work smarter.</p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold md:max-w-md text-center md:text-start">Boost Your Efficiency with Our Web Development.</h1>
+          <p className="text-sm font-medium md:max-w-md text-center md:text-start">Get ahead with our web development services. We&apos;ll build you a website that boosts your business and helps you work smarter.</p>
           {/* <Link className="py-3 px-5 max-w-fit bg-white rounded-3xl text-dark-blue font-bold" href={'#'}>Try free trial</Link> */}
         </div>
         <div className="py-6 px-6  w-8/12 md:min-w-1.5 bg-white rounded-xl text-black m-auto ">
@@ -226,11 +226,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid justify-center  bg-dark-blue">
+      <div className="grid justify-center  bg-dark-blue py-10">
         <div className="flex flex-col md:flex-row gap-16 md:gap-6 p-2 sm:p-10 md:p-20 text-white">
           <div className="flex flex-col gap-4 md:max-w-screen-md">
-            <p className="text-5xl font-bold ">Let&apos;s build something great!</p>
-            <p className="text-base font-medium text-neutral-300">Let&apos;s collaborate and create something exceptional together. Elevate your digital presence with our innovative solutions.</p>
+            <p className="text-5xl font-bold text-center md:text-start">Let&apos;s build something great!</p>
+            <p className="text-base font-medium text-neutral-300 text-center md:text-start">Let&apos;s collaborate and create something exceptional together. Elevate your digital presence with our innovative solutions.</p>
           </div> 
           <div className="m-auto min-w-fit">
             <Link className="px-6 py-4 bg-white text-dark-blue font-bold rounded-3xl" href={'#contactUs'}>Contact Us</Link>

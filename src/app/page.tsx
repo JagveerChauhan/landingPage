@@ -178,7 +178,7 @@ export default function Home() {
       <div className="p-10 bg-dark-blue text-white grid grid-cols-2 md:grid-cols-4 font-DM Sans">
         <div className="flex flex-col justify-center p-4 text-center"> 
           <span className="text-4xl font-bold">200+</span>
-          <span className="text-lg font-normal">satisfied Clients</span>
+          <span className="text-lg font-normal">Satisfied Clients</span>
         </div>
         <div className="flex flex-col justify-center p-4 text-center"> 
           <span className="text-4xl font-bold">100+</span>

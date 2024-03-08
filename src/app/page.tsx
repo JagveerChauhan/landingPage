@@ -2,13 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { ChangeEvent, FormEvent, useState } from 'react';
+import { useRouter } from 'next/navigation'
 import ReviewSlider from "@/app/components/reviewSlider";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faFacebook, faInstagram, faLinkedin, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import baseUrl from '@/app/constants/constant.js';
 
 export default function Home() {
-
+  const router = useRouter();
     interface FormData {
       name: string;
       email: string;
@@ -67,7 +66,7 @@ export default function Home() {
               message: '',
             });
             setErrors({});
-  
+            router.push('/thank_you');
             // Reset or redirect as needed
           } else {
             console.error("Error while enquiry submitting.");
@@ -106,12 +105,6 @@ export default function Home() {
 
   return (
     <>
-      <nav className="sticky z-50 top-0 left-0 w-full flex flex-row justify-between drop-shadow-md bg-white px-5 md:px-10">
-        <Link className="my-auto" href={'/'}><Image src={'/onetickLogo.png'} alt="Logo" height={45} width={150}></Image></Link>
-        <span className="py-6">
-          <Link className="py-3 px-6 bg-dark-blue text-white rounded-2xl font-semibold font-DM Sans" href="tel:+919650076857">Call Now</Link>
-        </span>
-      </nav>
       <div className="px-2 py-10 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 bg-dark-blue text-white font-DM Sans">
         <div className="flex flex-col justify-center gap-8 md:gap-10 px-6 sm:px-10 md:px-0 py-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold md:max-w-md text-center md:text-start">Boost Your Efficiency with Our Web Development.</h1>
@@ -185,7 +178,7 @@ export default function Home() {
       <div className="p-10 bg-dark-blue text-white grid grid-cols-2 md:grid-cols-4 font-DM Sans">
         <div className="flex flex-col justify-center p-4 text-center"> 
           <span className="text-4xl font-bold">200+</span>
-          <span className="text-lg font-normal">Satisficed Clients</span>
+          <span className="text-lg font-normal">satisfied Clients</span>
         </div>
         <div className="flex flex-col justify-center p-4 text-center"> 
           <span className="text-4xl font-bold">100+</span>
@@ -323,25 +316,6 @@ export default function Home() {
         <path fill="#0f0" d="M13,42h22c3.866,0,7-3.134,7-7V13c0-3.866-3.134-7-7-7H13c-3.866,0-7,3.134-7,7v22	C6,38.866,9.134,42,13,42z"></path><path fill="#fff" d="M35.45,31.041l-4.612-3.051c-0.563-0.341-1.267-0.347-1.836-0.017c0,0,0,0-1.978,1.153	c-0.265,0.154-0.52,0.183-0.726,0.145c-0.262-0.048-0.442-0.191-0.454-0.201c-1.087-0.797-2.357-1.852-3.711-3.205	c-1.353-1.353-2.408-2.623-3.205-3.711c-0.009-0.013-0.153-0.193-0.201-0.454c-0.037-0.206-0.009-0.46,0.145-0.726	c1.153-1.978,1.153-1.978,1.153-1.978c0.331-0.569,0.324-1.274-0.017-1.836l-3.051-4.612c-0.378-0.571-1.151-0.722-1.714-0.332	c0,0-1.445,0.989-1.922,1.325c-0.764,0.538-1.01,1.356-1.011,2.496c-0.002,1.604,1.38,6.629,7.201,12.45l0,0l0,0l0,0l0,0	c5.822,5.822,10.846,7.203,12.45,7.201c1.14-0.001,1.958-0.248,2.496-1.011c0.336-0.477,1.325-1.922,1.325-1.922	C36.172,32.192,36.022,31.419,35.45,31.041z"></path>
       </svg>
       </Link>
-      <footer>
-        <div className="flex flex-col md:flex-row justify-between w-full">
-          <div className="flex flex-col m-auto md:m-0 gap-3 p-5">
-            <Image src={'/onetickLogo.png'} height={45} width={150} alt="Onetick logo"></Image>
-            <div className="flex flex-row gap-3 ps-2">
-              <Link href={'https://api.whatsapp.com/send?phone=+919650076857&text=Hi'}><FontAwesomeIcon icon={faWhatsapp} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-              <Link href={'https://www.facebook.com/oneticktechnologies'}><FontAwesomeIcon icon={faFacebook} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-              <Link href={'https://www.instagram.com/oneticktechnologies?igsh=YmNnbHFsZ3F0djk5'}><FontAwesomeIcon icon={faInstagram} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-              <Link href={'https://www.linkedin.com/company/onetick-technologies-pvt-ltd/'}><FontAwesomeIcon icon={faLinkedin} className='text-2xl text-neutral-600'></FontAwesomeIcon></Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 font-DM Sans p-5">
-            <p className="text-base text-neutral-600 font-medium text-center md:text-right">Mail us at: <span className="text-black">hr@oneticktechnologies.com</span></p>
-            <p className="text-base text-neutral-600 font-medium text-center md:text-right">Call us at: <span className="text-black">+91-9650076857</span></p>
-            <p className="text-base text-neutral-600 font-medium text-center md:text-right">Address: <span className="text-black">E-1/74, Sector-11, Faridabad(Haryana), Pin Code-121006</span></p>
-          </div>
-        </div>
-        <div className="text-center text-neutral-600 p-4 font-medium font-DM Sans border-t border-neutral-600">&#169; 2024 OneTick Technologies Pvt Ltd. All rights reserved.</div>
-      </footer>
     </>
   );
 }

@@ -132,7 +132,7 @@ export default function Home() {
             <label className="text-sm font-medium">Message</label>
             <textarea className="py-1 px-2 border-black border focus:outline-none w-full" name="message" rows={3} placeholder="Your Message" value={formData.message} onChange={handleTextAreaChange}></textarea>
             {errors.message && <span  className="text-xs text-[#FF0000] font-semibold font-DM Sans">{errors.message}</span>}
-            <button type='submit' className='w-full mt-3 py-3 px-8 text-white font-semibold bg-dark-blue rounded-2xl'>Register</button>
+            <button type='submit' className='w-full mt-3 py-3 px-8 text-white font-semibold bg-dark-blue rounded-2xl'>Contact Us</button>
           </form>
         </div>
       </div>
@@ -307,7 +307,7 @@ export default function Home() {
                 <textarea className="border-b border-neutral-400 focus:outline-none" name="message" rows={2} value={formData.message} onChange={handleTextAreaChange} ></textarea>
                 {errors.message && <span  className="text-xs text-[#FF0000] font-semibold font-DM Sans">{errors.message}</span>}
               </span>
-              <button type='submit' className='ms-auto mt-5 py-3 px-8 text-white font-semibold bg-dark-blue rounded-md w-fit text-sm'>Send Message</button>
+              <button type='submit' className='ms-auto mt-5 py-3 px-8 text-white font-semibold bg-dark-blue rounded-md w-fit text-sm'>Contact Us</button>
             </form>
           </div>
         </div>

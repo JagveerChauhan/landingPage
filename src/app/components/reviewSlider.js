@@ -98,15 +98,15 @@ const testimonialReviews=[
   },
   {
     name:"Vijay Malhotra",
-    description: "It has been a pleasure working with Onetick Technologies team. They are extremely efficient and delivers projects on time."
+    description: "It's a pleasure collaborating with Onetick Technologies. Their remarkable efficiency ensures timely project delivery, fostering a seamless experience. Their commitment to excellence shines through, enhancing our collaborative journey."
   },
   {
     name:"Rahul Garg",
-    description: "I am here to share my experience with Onetick Technologies on a project regarding my website. It was earlier showing some bugs and 404 errors. But thanks to the developers and team for getting my work done. Very grateful. It was a happy experience."
+    description: "I am here to share my experience with Onetick Technologies on a project regarding my website. It was earlier showing some bugs and 404 errors. But thanks to the developers and team for getting my work done. Very grateful."
   },
   {
     name:"Harshit Sharma",
-    description: "I would like to extend my thanks to Netmaxims technologies for re-defining my site and being so interactive throughout. I received highly active responses."
+    description: "Gratitude to Onetick Technologies for transforming my site and maintaining interactive engagement. The highly active responses received showcase their commitment to excellence, making this collaboration truly commendable."
   },
 ]
 

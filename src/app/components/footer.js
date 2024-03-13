@@ -19,7 +19,7 @@ export default function Footer()
             </div>
           </div>
           <div className="flex flex-col gap-3 font-DM Sans p-5">
-            <p className="text-base text-neutral-600 font-medium text-center md:text-right">Mail us at: <span className="text-black">hr@oneticktechnologies.com</span></p>
+            <p className="text-base text-neutral-600 font-medium text-center md:text-right">Mail us at: <span className="text-black">dinesh@oneticktechnologies.com</span></p>
             <p className="text-base text-neutral-600 font-medium text-center md:text-right">Call us at: <span className="text-black">+91-9650076857</span></p>
             <p className="text-base text-neutral-600 font-medium text-center md:text-right">Address: <span className="text-black">E-1/74, Sector-11, Faridabad(Haryana), Pin Code-121006</span></p>
           </div>
